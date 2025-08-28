@@ -9,7 +9,7 @@ import numpy as np
 import requests
 import logging
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Union
+from typing import Dict, List, Optional
 from pathlib import Path
 import pickle
 import time

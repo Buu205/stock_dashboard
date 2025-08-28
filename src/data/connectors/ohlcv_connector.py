@@ -9,8 +9,7 @@ from datetime import datetime, timedelta
 import logging
 from pathlib import Path
 
-# Import the new connectors
-from .vnstock_connector import VnstockDataConnector
+# Import the connectors - TCBS as primary
 from .tcbs_connector import TCBSConnector as TCBSDataConnector
 
 logger = logging.getLogger(__name__)
@@ -268,7 +267,7 @@ class TCBSConnector(OHLCVConnector):
 class HybridOHLCVConnector:
     """Hybrid connector with fallback mechanism"""
     
-    def __init__(self, primary='vnstock', fallback='tcbs', vnstock_source='VCI'):
+    def __init__(self, primary='tcbs', fallback=None, vnstock_source='VCI'):
         """
         Initialize hybrid connector
         
@@ -279,13 +278,19 @@ class HybridOHLCVConnector:
         """
         self.connectors = {}
         
-        # Initialize connectors
-        if primary == 'vnstock':
-            self.connectors['primary'] = VnstockDataConnector(source=vnstock_source)
-            self.connectors['fallback'] = TCBSDataConnector()
+        # Initialize TCBS as primary connector
+        self.connectors['primary'] = TCBSDataConnector()
+        
+        # Optionally initialize vnstock as fallback (but it won't be used if not available)
+        if fallback == 'vnstock':
+            try:
+                from .vnstock_connector import VnstockDataConnector
+                self.connectors['fallback'] = VnstockDataConnector(source=vnstock_source)
+            except Exception as e:
+                logger.debug(f"Vnstock fallback not available: {e}")
+                self.connectors['fallback'] = None
         else:
-            self.connectors['primary'] = TCBSDataConnector()
-            self.connectors['fallback'] = VnstockDataConnector(source=vnstock_source)
+            self.connectors['fallback'] = None
         
         logger.info(f"HybridOHLCVConnector initialized with {primary} as primary")
     
@@ -304,13 +309,17 @@ class HybridOHLCVConnector:
         except Exception as e:
             logger.warning(f"Primary connector failed for {symbol}: {e}")
         
-        # Try fallback connector
-        try:
-            logger.info(f"Using fallback connector for {symbol}")
-            df = self.connectors['fallback'].get_ohlcv(symbol, start_date, end_date, resolution)
-            return df
-        except Exception as e:
-            logger.error(f"Both connectors failed for {symbol}: {e}")
+        # Try fallback connector if available
+        if self.connectors.get('fallback'):
+            try:
+                logger.info(f"Using fallback connector for {symbol}")
+                df = self.connectors['fallback'].get_ohlcv(symbol, start_date, end_date, resolution)
+                return df
+            except Exception as e:
+                logger.error(f"Both connectors failed for {symbol}: {e}")
+                return pd.DataFrame()
+        else:
+            logger.debug(f"No fallback available for {symbol}")
             return pd.DataFrame()
     
     def get_batch_ohlcv(self, 

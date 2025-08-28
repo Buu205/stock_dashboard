@@ -13,9 +13,9 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 
 # Import modules - using relative imports
-from ...core.config import get_config, get_metric_code
-from ...data.loaders.financial_loader import FinancialDataLoader
-from ...data.connectors.tcbs_connector import TCBSConnector
+from src.core.config import get_config, get_metric_code
+from src.data.loaders.financial_loader import FinancialDataLoader
+from src.data.connectors.tcbs_connector import TCBSConnector
 
 
 class IntegratedAnalyzer:

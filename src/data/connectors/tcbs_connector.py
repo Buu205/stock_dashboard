@@ -17,7 +17,7 @@ import time
 logger = logging.getLogger(__name__)
 
 # Import config - using relative import
-from ...core.config import get_config
+from src.core.config import get_config
 
 
 class TCBSConnector:

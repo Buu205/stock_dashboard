@@ -7,9 +7,9 @@ from typing import Any, Optional, Dict, List
 import pandas as pd
 from pathlib import Path
 
-from ...core.config import Config
-from ...core.data_manager import DataManager
-from ...core.exceptions import DataLoadError
+from src.core.config import Config
+from src.core.data_manager import DataManager
+from src.core.exceptions import DataLoadError
 
 
 class BaseLoader(ABC):

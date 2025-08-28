@@ -6,7 +6,7 @@ import pandas as pd
 from typing import Optional, Dict, Any
 
 from .base_loader import BaseLoader
-from ...core.exceptions import DataLoadError
+from src.core.exceptions import DataLoadError
 
 
 class MetadataLoader(BaseLoader):

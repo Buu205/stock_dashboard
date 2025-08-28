@@ -10,7 +10,7 @@ import logging
 from datetime import datetime, timedelta
 
 from ..technical.indicator_analyzer import TechnicalIndicatorAnalyzer
-from ...data.loaders.market_loader import MarketDataLoader
+from src.data.loaders.market_loader import MarketDataLoader
 
 logger = logging.getLogger(__name__)
 

@@ -7,7 +7,7 @@ from typing import Any, Optional, Dict, List
 import pandas as pd
 from pathlib import Path
 
-from src.core.config import Config
+from src.core.config import AppConfig
 from src.core.data_manager import DataManager
 from src.core.exceptions import DataLoadError
 
@@ -15,7 +15,7 @@ from src.core.exceptions import DataLoadError
 class BaseLoader(ABC):
     """Abstract base class for data loaders"""
     
-    def __init__(self, config: Optional[Config] = None, 
+    def __init__(self, config: Optional[AppConfig] = None, 
                  data_manager: Optional[DataManager] = None):
         """
         Initialize base loader
@@ -24,7 +24,7 @@ class BaseLoader(ABC):
             config: Configuration object
             data_manager: Data manager instance
         """
-        self.config = config or Config()
+        self.config = config or AppConfig()
         self.data_manager = data_manager or DataManager(self.config)
         self._cache = {}
     

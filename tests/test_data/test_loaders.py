@@ -19,7 +19,7 @@ if str(parent_path) not in sys.path:
     sys.path.insert(0, str(parent_path))
 
 # Import our modules
-from src.core.config import Config
+from src.core.config import AppConfig
 from src.data.loaders.financial_loader import FinancialDataLoader
 
 

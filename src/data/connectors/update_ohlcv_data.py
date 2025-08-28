@@ -33,7 +33,7 @@ class OHLCVUpdater:
             parquet_path: Path to the main database
         """
         self.parquet_path = parquet_path
-        self.connector = HybridOHLCVConnector(primary='vnstock')
+        self.connector = HybridOHLCVConnector(primary='tcbs')
         self.cache = OHLCVCacheManager()
         
         # Load ticker list

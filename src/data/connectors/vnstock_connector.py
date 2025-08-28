@@ -28,9 +28,14 @@ class VnstockDataConnector:
             self.available = True
             logger.info(f"VnstockDataConnector initialized with source: {source}")
         except ImportError:
-            logger.error("vnstock_ta not installed. Install with: pip install vnstock_ta")
+            # Silently handle missing vnstock_ta - it's optional for deployment
+            self.DataSource = None
+            self.available = False
+            logger.debug("vnstock_ta not available - using cached data only")
         except Exception as e:
-            logger.error(f"Failed to initialize VnstockDataConnector: {e}")
+            self.DataSource = None
+            self.available = False
+            logger.debug(f"VnstockDataConnector initialization skipped: {e}")
     
     def get_ohlcv(self, 
                   symbol: str, 
@@ -50,7 +55,9 @@ class VnstockDataConnector:
             DataFrame with columns: open, high, low, close, volume
         """
         if not self.available:
-            raise RuntimeError("vnstock_data is not available")
+            # Return empty DataFrame when vnstock_ta is not available
+            logger.debug(f"vnstock_ta not available, returning empty data for {symbol}")
+            return pd.DataFrame()
         
         try:
             # Set default dates if not provided
@@ -242,9 +249,14 @@ class VnstockTechnicalAnalysis:
             self.available = True
             logger.info("VnstockTechnicalAnalysis initialized")
         except ImportError:
-            logger.error("vnstock_ta not installed. Install with: pip install vnstock_ta")
+            # Silently handle missing vnstock_ta - it's optional for deployment
+            self.Indicator = None
+            self.available = False
+            logger.debug("vnstock_ta not available - technical indicators disabled")
         except Exception as e:
-            logger.error(f"Failed to initialize VnstockTechnicalAnalysis: {e}")
+            self.Indicator = None
+            self.available = False
+            logger.debug(f"VnstockTechnicalAnalysis initialization skipped: {e}")
     
     def calculate_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -257,7 +269,7 @@ class VnstockTechnicalAnalysis:
             DataFrame with added indicator columns
         """
         if not self.available:
-            logger.warning("vnstock_ta not available, returning original data")
+            logger.debug("vnstock_ta not available, returning original data")
             return df
         
         try:

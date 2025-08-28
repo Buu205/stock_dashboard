@@ -1,0 +1,458 @@
+ticker,sector,record_count,years,quarters
+AAA,Hóa chất,19016,2018-2025,4
+AAH,Tài nguyên Cơ bản,5785,2020-2025,4
+AAS,Dịch vụ tài chính,49799,2018-2025,4
+AAV,Bất động sản,17536,2018-2025,4
+ABB,Ngân hàng,25213,2018-2025,4
+ABI,Bảo hiểm,35240,2018-2025,4
+ABS,Hóa chất,16201,2018-2025,4
+ABT,Thực phẩm và đồ uống,17536,2018-2025,4
+ABW,Dịch vụ tài chính,40715,2018-2025,4
+ACB,Ngân hàng,24980,2018-2025,4
+ACG,Tài nguyên Cơ bản,14211,2018-2025,4
+ACV,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+ADS,Hàng cá nhân & Gia dụng,18128,2018-2025,4
+AFX,Bán lẻ,17511,2018-2025,4
+AGG,Bất động sản,16692,2018-2025,4
+AGR,Dịch vụ tài chính,53362,2018-2025,4
+AMS,Hàng & Dịch vụ Công nghiệp,16944,2018-2025,4
+ANT,Thực phẩm và đồ uống,5160,2018-2025,4
+ANV,Thực phẩm và đồ uống,19030,2018-2025,4
+APF,Thực phẩm và đồ uống,17240,2018-2025,4
+APG,Dịch vụ tài chính,53247,2018-2025,4
+APH,Hàng & Dịch vụ Công nghiệp,14224,2018-2025,4
+API,Bất động sản,18128,2018-2025,4
+APS,Dịch vụ tài chính,52578,2018-2025,4
+ASM,Thực phẩm và đồ uống,19016,2018-2025,4
+AST,Bán lẻ,19016,2018-2025,4
+AVG,Hóa chất,4927,2022-2025,4
+BAF,Thực phẩm và đồ uống,12354,2018-2025,4
+BCC,Xây dựng và Vật liệu,19016,2018-2025,4
+BCE,Xây dựng và Vật liệu,19016,2018-2025,4
+BCG,Dịch vụ tài chính,17848,2018-2024,4
+BCM,Bất động sản,18975,2018-2025,4
+BCR,Xây dựng và Vật liệu,3025,2021-2024,4
+BFC,Hóa chất,18128,2018-2025,4
+BGE,"Điện, nước & xăng dầu khí đốt",2408,2022-2025,4
+BIC,Bảo hiểm,33649,2018-2025,4
+BID,Ngân hàng,24980,2018-2025,4
+BKC,Tài nguyên Cơ bản,14047,2018-2025,4
+BMC,Tài nguyên Cơ bản,16944,2018-2025,4
+BMI,Bảo hiểm,36618,2018-2025,4
+BMJ,Tài nguyên Cơ bản,11041,2018-2025,4
+BMP,Xây dựng và Vật liệu,19016,2018-2025,4
+BMS,Dịch vụ tài chính,52662,2018-2025,4
+BNA,Thực phẩm và đồ uống,10930,2019-2025,4
+BOT,Xây dựng và Vật liệu,13875,2018-2025,4
+BSI,Dịch vụ tài chính,53754,2018-2025,4
+BSR,Dầu khí,18462,2018-2025,4
+BVB,Ngân hàng,23559,2018-2025,4
+BVH,Bảo hiểm,35435,2018-2025,4
+BVS,Dịch vụ tài chính,50652,2018-2025,4
+BWE,"Điện, nước & xăng dầu khí đốt",19016,2018-2025,4
+C47,Xây dựng và Vật liệu,18635,2018-2025,4
+C4G,Xây dựng và Vật liệu,18608,2018-2025,4
+C69,Xây dựng và Vật liệu,17216,2018-2025,4
+CCL,Bất động sản,18007,2018-2025,4
+CDC,Xây dựng và Vật liệu,19016,2018-2025,4
+CEO,Bất động sản,19016,2018-2025,4
+CHP,"Điện, nước & xăng dầu khí đốt",19001,2018-2025,4
+CIG,Xây dựng và Vật liệu,17215,2018-2025,4
+CII,Xây dựng và Vật liệu,19045,2018-2025,4
+CKA,Hàng & Dịch vụ Công nghiệp,2528,2018-2024,0
+CKG,Bất động sản,16919,2018-2025,4
+CLL,Hàng & Dịch vụ Công nghiệp,18720,2018-2025,4
+CLX,Thực phẩm và đồ uống,16044,2018-2025,4
+CMG,Công nghệ Thông tin,17018,2018-2025,4
+CMS,Xây dựng và Vật liệu,13735,2018-2025,4
+CMX,Thực phẩm và đồ uống,17805,2018-2025,4
+CNG,"Điện, nước & xăng dầu khí đốt",19016,2018-2025,4
+CRC,Xây dựng và Vật liệu,16352,2018-2025,4
+CRE,Bất động sản,18298,2018-2025,4
+CSC,Xây dựng và Vật liệu,15864,2018-2025,4
+CSM,Ô tô và phụ tùng,19016,2018-2025,4
+CST,Tài nguyên Cơ bản,15455,2019-2025,4
+CSV,Hóa chất,19016,2018-2025,4
+CTD,Xây dựng và Vật liệu,18648,2018-2025,4
+CTF,Ô tô và phụ tùng,19016,2018-2025,4
+CTG,Ngân hàng,25107,2018-2025,4
+CTI,Xây dựng và Vật liệu,18720,2018-2025,4
+CTP,Thực phẩm và đồ uống,15127,2018-2025,4
+CTR,Xây dựng và Vật liệu,18903,2018-2025,4
+CTS,Dịch vụ tài chính,53570,2018-2025,4
+CTX,Xây dựng và Vật liệu,17640,2018-2025,4
+D2D,Bất động sản,17240,2018-2025,4
+DAH,Du lịch và Giải trí,18389,2018-2025,4
+DBC,Thực phẩm và đồ uống,19016,2018-2025,4
+DBD,Y tế,18595,2018-2025,4
+DC4,Xây dựng và Vật liệu,18227,2018-2025,4
+DCL,Y tế,18424,2018-2025,4
+DCM,Hóa chất,19016,2018-2025,4
+DDG,"Điện, nước & xăng dầu khí đốt",18232,2018-2025,4
+DDV,Hóa chất,18128,2018-2025,4
+DFF,Xây dựng và Vật liệu,11982,2018-2025,4
+DGC,Hóa chất,19016,2018-2025,4
+DGT,Xây dựng và Vật liệu,12864,2018-2025,4
+DGW,Bán lẻ,19016,2018-2025,4
+DHA,Xây dựng và Vật liệu,18989,2018-2025,4
+DHC,Tài nguyên Cơ bản,18801,2018-2025,4
+DHG,Y tế,19016,2018-2025,4
+DHT,Bán lẻ,18896,2018-2025,4
+DIG,Bất động sản,18809,2018-2025,4
+DL1,Hàng & Dịch vụ Công nghiệp,18424,2018-2025,4
+DLG,Xây dựng và Vật liệu,18128,2018-2025,4
+DNP,Xây dựng và Vật liệu,19016,2018-2025,4
+DPG,Xây dựng và Vật liệu,18720,2018-2025,4
+DPM,Hóa chất,19016,2018-2025,4
+DPR,Hóa chất,19016,2018-2025,4
+DRC,Ô tô và phụ tùng,18216,2018-2025,4
+DRH,Bất động sản,18720,2018-2025,4
+DRI,Hóa chất,18424,2018-2025,4
+DSC,Dịch vụ tài chính,52480,2018-2025,4
+DSE,Dịch vụ tài chính,42751,2018-2025,4
+DSH,Xây dựng và Vật liệu,488,2024-2024,0
+DSN,Du lịch và Giải trí,18908,2018-2025,4
+DTD,Bất động sản,18992,2018-2025,4
+DVM,Y tế,9352,2018-2025,4
+DVN,Y tế,16944,2018-2025,4
+DVP,Hàng & Dịch vụ Công nghiệp,18252,2018-2025,4
+DXG,Bất động sản,19016,2018-2025,4
+DXP,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+DXS,Bất động sản,12776,2018-2025,4
+ECO,Hóa chất,2358,2023-2025,4
+EIB,Ngân hàng,24980,2018-2025,4
+ELC,Công nghệ Thông tin,19016,2018-2025,4
+EVE,Hàng cá nhân & Gia dụng,19016,2018-2025,4
+EVF,Dịch vụ tài chính,24980,2018-2025,4
+EVG,Xây dựng và Vật liệu,18720,2018-2025,4
+EVS,Dịch vụ tài chính,53658,2018-2025,4
+FCM,Xây dựng và Vật liệu,19016,2018-2025,4
+FCN,Xây dựng và Vật liệu,18720,2018-2025,4
+FIR,Bất động sản,16141,2018-2025,4
+FIT,Y tế,19016,2018-2025,4
+FMC,Thực phẩm và đồ uống,18594,2018-2025,4
+FOC,Truyền thông,16352,2018-2025,4
+FOX,Viễn thông,19016,2018-2025,4
+FPT,Công nghệ Thông tin,19016,2018-2025,4
+FRT,Bán lẻ,18720,2018-2025,4
+FTS,Dịch vụ tài chính,53570,2018-2025,4
+G36,Xây dựng và Vật liệu,18007,2018-2025,4
+GAS,"Điện, nước & xăng dầu khí đốt",18824,2018-2025,4
+GDA,Tài nguyên Cơ bản,9999,2018-2025,4
+GDT,Hàng cá nhân & Gia dụng,19016,2018-2025,4
+GEE,Hàng & Dịch vụ Công nghiệp,12184,2019-2025,4
+GEG,"Điện, nước & xăng dầu khí đốt",19016,2018-2025,4
+GEX,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+GIL,Hàng cá nhân & Gia dụng,18336,2018-2025,4
+GKM,Xây dựng và Vật liệu,16145,2018-2025,4
+GMD,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+GSP,Hàng & Dịch vụ Công nghiệp,18424,2018-2025,4
+GVR,Hóa chất,18166,2018-2025,4
+HAG,Thực phẩm và đồ uống,18975,2018-2025,4
+HAH,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+HAP,Tài nguyên Cơ bản,18720,2018-2025,4
+HAR,Bất động sản,18801,2018-2025,4
+HAX,Ô tô và phụ tùng,19016,2018-2025,4
+HBC,Xây dựng và Vật liệu,19016,2018-2025,4
+HCM,Dịch vụ tài chính,53570,2018-2025,4
+HD6,Bất động sản,14100,2018-2025,4
+HDB,Ngân hàng,24980,2018-2025,4
+HDC,Bất động sản,19016,2018-2025,4
+HDG,Bất động sản,19016,2018-2025,4
+HGM,Tài nguyên Cơ bản,16648,2018-2025,4
+HHP,Tài nguyên Cơ bản,18106,2018-2025,4
+HHS,Ô tô và phụ tùng,19016,2018-2025,4
+HHV,Xây dựng và Vật liệu,15726,2018-2025,4
+HII,Hóa chất,18764,2018-2025,4
+HLD,Bất động sản,18483,2018-2025,4
+HNG,Thực phẩm và đồ uống,19016,2018-2025,4
+HNM,Thực phẩm và đồ uống,14176,2018-2025,4
+HPG,Tài nguyên Cơ bản,19016,2018-2025,4
+HPX,Bất động sản,18956,2018-2025,4
+HQC,Bất động sản,19016,2018-2025,4
+HSG,Tài nguyên Cơ bản,18824,2018-2025,4
+HSL,Thực phẩm và đồ uống,16456,2018-2025,4
+HT1,Xây dựng và Vật liệu,18991,2018-2025,4
+HTG,Hàng cá nhân & Gia dụng,18720,2018-2025,4
+HTI,Xây dựng và Vật liệu,15988,2018-2025,4
+HTN,Bất động sản,18720,2018-2025,4
+HUB,Xây dựng và Vật liệu,17640,2018-2025,4
+HUT,Ô tô và phụ tùng,18128,2018-2025,4
+HVA,Dịch vụ tài chính,15885,2018-2025,4
+HVH,Xây dựng và Vật liệu,18594,2018-2025,4
+HVN,Du lịch và Giải trí,19016,2018-2025,4
+HVT,Hóa chất,14804,2018-2025,4
+ICN,Xây dựng và Vật liệu,6583,2018-2025,4
+ICT,Công nghệ Thông tin,17272,2018-2025,4
+IDC,Bất động sản,18260,2018-2025,4
+IDI,Thực phẩm và đồ uống,18312,2018-2025,4
+IDJ,Bất động sản,18679,2018-2025,4
+IDV,Bất động sản,18440,2018-2025,4
+IJC,Bất động sản,19016,2018-2025,4
+IMP,Y tế,18720,2018-2025,4
+IPA,Hàng & Dịch vụ Công nghiệp,18453,2018-2025,4
+ITC,Bất động sản,18890,2018-2025,4
+ITD,Công nghệ Thông tin,17552,2018-2025,4
+ITQ,Tài nguyên Cơ bản,14931,2018-2025,4
+IVS,Dịch vụ tài chính,52129,2018-2025,4
+JVC,Y tế,18528,2018-2025,4
+KBC,Bất động sản,18991,2018-2025,4
+KCB,Tài nguyên Cơ bản,3416,2018-2024,0
+KDC,Thực phẩm và đồ uống,18720,2018-2025,4
+KDH,Bất động sản,19016,2018-2025,4
+KHG,Bất động sản,12480,2018-2025,4
+KLB,Ngân hàng,25107,2018-2025,4
+KOS,Bất động sản,18720,2018-2025,4
+KSB,Tài nguyên Cơ bản,18693,2018-2025,4
+KSF,Bất động sản,10282,2018-2025,4
+KSV,Tài nguyên Cơ bản,19016,2018-2025,4
+KVC,Tài nguyên Cơ bản,15168,2018-2025,4
+L14,Xây dựng và Vật liệu,18546,2018-2025,4
+L18,Xây dựng và Vật liệu,17925,2018-2025,4
+L40,Xây dựng và Vật liệu,10338,2018-2025,4
+LAS,Hóa chất,18813,2018-2025,4
+LBM,Xây dựng và Vật liệu,19016,2018-2025,4
+LCG,Xây dựng và Vật liệu,18639,2018-2025,4
+LDG,Bất động sản,18128,2018-2025,4
+LGL,Bất động sản,18528,2018-2025,4
+LHC,Xây dựng và Vật liệu,17240,2018-2025,4
+LHG,Bất động sản,19053,2018-2025,4
+LIC,Xây dựng và Vật liệu,17536,2018-2025,4
+LIG,Xây dựng và Vật liệu,16620,2018-2025,4
+LIX,Hàng cá nhân & Gia dụng,19016,2018-2025,4
+LPB,Ngân hàng,24980,2018-2025,4
+LSG,Bất động sản,17443,2018-2025,4
+LSS,Thực phẩm và đồ uống,18632,2018-2025,4
+LTG,Thực phẩm và đồ uống,14816,2018-2024,4
+MBB,Ngân hàng,25033,2018-2025,4
+MBG,Xây dựng và Vật liệu,16996,2018-2025,4
+MBS,Dịch vụ tài chính,53770,2018-2025,4
+MCG,Xây dựng và Vật liệu,18720,2018-2025,4
+MCH,Thực phẩm và đồ uống,18991,2018-2025,4
+MCM,Thực phẩm và đồ uống,15310,2018-2025,4
+MFS,Viễn thông,3608,2018-2024,1
+MHC,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+MIG,Bảo hiểm,33819,2018-2025,4
+MLS,Thực phẩm và đồ uống,4203,2018-2024,4
+MML,Thực phẩm và đồ uống,16412,2018-2025,4
+MPC,Thực phẩm và đồ uống,18040,2018-2025,4
+MSB,Ngân hàng,24980,2018-2025,4
+MSH,Hàng cá nhân & Gia dụng,18016,2018-2025,4
+MSN,Thực phẩm và đồ uống,19016,2018-2025,4
+MSR,Tài nguyên Cơ bản,19016,2018-2025,4
+MST,Xây dựng và Vật liệu,16944,2018-2025,4
+MTA,Tài nguyên Cơ bản,13049,2018-2025,4
+MVC,Xây dựng và Vật liệu,18007,2018-2025,4
+MWG,Bán lẻ,19016,2018-2025,4
+MZG,Tài nguyên Cơ bản,3233,2022-2025,4
+NAB,Ngân hàng,24980,2018-2025,4
+NAF,Thực phẩm và đồ uống,18890,2018-2025,4
+NAG,Hàng & Dịch vụ Công nghiệp,13928,2018-2025,4
+NBB,Bất động sản,18424,2018-2025,4
+NBC,Tài nguyên Cơ bản,19016,2018-2025,4
+NCT,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+NDN,Bất động sản,17928,2018-2025,4
+NED,Xây dựng và Vật liệu,17495,2018-2025,4
+NHA,Xây dựng và Vật liệu,17240,2018-2025,4
+NHH,Hóa chất,16012,2018-2025,4
+NKG,Tài nguyên Cơ bản,19016,2018-2025,4
+NLG,Bất động sản,19016,2018-2025,4
+NNC,Xây dựng và Vật liệu,17636,2018-2025,4
+NO1,Hàng & Dịch vụ Công nghiệp,11088,2018-2025,4
+NRC,Bất động sản,18128,2018-2025,4
+NT2,"Điện, nước & xăng dầu khí đốt",19271,2018-2025,4
+NTC,Bất động sản,17765,2018-2025,4
+NTL,Bất động sản,18438,2018-2025,4
+NTP,Xây dựng và Vật liệu,19016,2018-2025,4
+NVB,Ngân hàng,23190,2018-2025,4
+NVL,Bất động sản,18723,2018-2025,4
+OCB,Ngân hàng,24980,2018-2025,4
+ODE,Truyền thông,1895,2019-2024,1
+OGC,Dịch vụ tài chính,17199,2018-2025,4
+OIL,Dầu khí,18720,2018-2025,4
+OPC,Y tế,18720,2018-2025,4
+ORS,Dịch vụ tài chính,52978,2018-2025,4
+PAC,Hàng & Dịch vụ Công nghiệp,17936,2018-2025,4
+PAN,Thực phẩm và đồ uống,19016,2018-2025,4
+PAT,Hóa chất,10783,2018-2025,4
+PC1,Xây dựng và Vật liệu,18720,2018-2025,4
+PCH,Hóa chất,8989,2020-2025,4
+PDR,Bất động sản,19016,2018-2025,4
+PET,Bán lẻ,19016,2018-2025,4
+PFL,Xây dựng và Vật liệu,14576,2018-2025,4
+PGB,Ngân hàng,24983,2018-2025,4
+PGV,"Điện, nước & xăng dầu khí đốt",18424,2018-2025,4
+PHC,Xây dựng và Vật liệu,14848,2018-2025,4
+PHP,Hàng & Dịch vụ Công nghiệp,18679,2018-2025,4
+PHR,Hóa chất,18749,2018-2025,4
+PLC,Hóa chất,19016,2018-2025,4
+PLX,Dầu khí,19016,2018-2025,4
+PMC,Y tế,18720,2018-2025,4
+PNJ,Hàng cá nhân & Gia dụng,19016,2018-2025,4
+POM,Tài nguyên Cơ bản,17484,2018-2025,4
+POW,"Điện, nước & xăng dầu khí đốt",19016,2018-2025,4
+PPC,"Điện, nước & xăng dầu khí đốt",19016,2018-2025,4
+PPT,"Điện, nước & xăng dầu khí đốt",8446,2019-2025,4
+PSD,Bán lẻ,17536,2018-2025,4
+PSI,Dịch vụ tài chính,52874,2018-2025,4
+PSW,Hóa chất,13096,2018-2025,4
+PTB,Tài nguyên Cơ bản,19016,2018-2025,4
+PTL,Bất động sản,17240,2018-2025,4
+PV2,Bất động sản,16932,2018-2025,4
+PVB,Dầu khí,18887,2018-2025,4
+PVC,Dầu khí,18695,2018-2025,4
+PVD,Dầu khí,18720,2018-2025,4
+PVI,Bảo hiểm,36525,2018-2025,4
+PVP,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+PVS,Dầu khí,19045,2018-2025,4
+PVT,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+PVX,Xây dựng và Vật liệu,18040,2018-2025,4
+PXL,Bất động sản,18989,2018-2025,4
+QCG,Bất động sản,19016,2018-2025,4
+QNS,Thực phẩm và đồ uống,18720,2018-2025,4
+QTP,"Điện, nước & xăng dầu khí đốt",19016,2018-2025,4
+RAL,Hàng cá nhân & Gia dụng,19016,2018-2025,4
+REE,"Điện, nước & xăng dầu khí đốt",18528,2018-2025,4
+RYG,Xây dựng và Vật liệu,5087,2021-2025,4
+S99,Xây dựng và Vật liệu,19045,2018-2025,4
+SAB,Thực phẩm và đồ uống,19016,2018-2025,4
+SAM,Công nghệ Thông tin,18618,2018-2025,4
+SAS,Bán lẻ,17565,2018-2025,4
+SBG,Hàng & Dịch vụ Công nghiệp,7033,2019-2025,4
+SBS,Dịch vụ tài chính,52887,2018-2025,4
+SBT,Thực phẩm và đồ uống,18544,2018-2025,4
+SCG,Xây dựng và Vật liệu,13780,2019-2025,4
+SCL,Xây dựng và Vật liệu,18262,2018-2025,4
+SCR,Bất động sản,18720,2018-2025,4
+SCS,Du lịch và Giải trí,19016,2018-2025,4
+SEA,Thực phẩm và đồ uống,17750,2018-2025,4
+SGN,Hàng & Dịch vụ Công nghiệp,18720,2018-2025,4
+SGP,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+SGR,Bất động sản,19016,2018-2025,4
+SGT,Công nghệ Thông tin,18720,2018-2025,4
+SHB,Ngân hàng,24980,2018-2025,4
+SHI,Tài nguyên Cơ bản,18720,2018-2025,4
+SHN,Tài nguyên Cơ bản,18128,2018-2025,4
+SHS,Dịch vụ tài chính,53570,2018-2025,4
+SIP,Bất động sản,17180,2018-2025,4
+SJD,"Điện, nước & xăng dầu khí đốt",18453,2018-2025,4
+SJE,Xây dựng và Vật liệu,18826,2018-2025,4
+SJS,Bất động sản,17766,2018-2025,4
+SKG,Du lịch và Giải trí,19016,2018-2025,4
+SLS,Thực phẩm và đồ uống,18750,2018-2025,4
+SMB,Thực phẩm và đồ uống,18866,2018-2025,4
+SMC,Tài nguyên Cơ bản,18720,2018-2025,4
+SSB,Ngân hàng,24980,2018-2025,4
+SSH,Bất động sản,11888,2019-2025,4
+SSI,Dịch vụ tài chính,53570,2018-2025,4
+ST8,Công nghệ Thông tin,18128,2018-2025,4
+STB,Ngân hàng,25107,2018-2025,4
+STH,Truyền thông,9387,2018-2025,4
+STK,Hàng cá nhân & Gia dụng,19016,2018-2025,4
+SVN,Xây dựng và Vật liệu,16015,2018-2025,4
+SZB,Bất động sản,18128,2018-2025,4
+SZC,Bất động sản,18977,2018-2025,4
+SZL,Bất động sản,17832,2018-2025,4
+TAL,Bất động sản,3220,2022-2025,4
+TCB,Ngân hàng,24586,2018-2025,4
+TCD,Xây dựng và Vật liệu,17848,2018-2024,4
+TCH,Bất động sản,18469,2018-2025,4
+TCI,Dịch vụ tài chính,52345,2018-2025,4
+TCL,Hàng & Dịch vụ Công nghiệp,15760,2018-2025,4
+TCM,Hàng cá nhân & Gia dụng,19016,2018-2025,4
+TCO,Thực phẩm và đồ uống,16656,2018-2025,4
+TD6,Tài nguyên Cơ bản,1360,2024-2025,2
+TDC,Bất động sản,18967,2018-2025,4
+TDH,Bất động sản,18824,2018-2025,4
+TDM,"Điện, nước & xăng dầu khí đốt",18991,2018-2025,4
+TDP,Hàng & Dịch vụ Công nghiệp,18569,2018-2025,4
+TEG,Bất động sản,18424,2018-2025,4
+THG,Xây dựng và Vật liệu,18720,2018-2025,4
+TIG,Bất động sản,18383,2018-2025,4
+TIP,Bất động sản,19016,2018-2025,4
+TL4,Xây dựng và Vật liệu,13392,2018-2025,4
+TLD,Bất động sản,19016,2018-2025,4
+TLG,Hàng cá nhân & Gia dụng,18991,2018-2025,4
+TLH,Tài nguyên Cơ bản,19016,2018-2025,4
+TNC,Hóa chất,19016,2018-2025,4
+TNG,Hàng cá nhân & Gia dụng,18989,2018-2025,4
+TNH,Y tế,14224,2018-2025,4
+TNI,Tài nguyên Cơ bản,16648,2018-2025,4
+TNT,Tài nguyên Cơ bản,17936,2018-2025,4
+TOS,Dầu khí,11741,2019-2025,4
+TPB,Ngân hàng,24980,2018-2025,4
+TRC,Hóa chất,18991,2018-2025,4
+TSC,Hóa chất,19016,2018-2025,4
+TTA,"Điện, nước & xăng dầu khí đốt",13745,2018-2025,4
+TTF,Tài nguyên Cơ bản,19045,2018-2025,4
+TTH,Tài nguyên Cơ bản,17199,2018-2025,4
+TTN,Viễn thông,17192,2018-2025,4
+TV1,Hàng & Dịch vụ Công nghiệp,17936,2018-2025,4
+TV2,Hàng & Dịch vụ Công nghiệp,18720,2018-2025,4
+TVB,Dịch vụ tài chính,52863,2018-2025,4
+TVC,Dịch vụ tài chính,19016,2018-2025,4
+TVN,Tài nguyên Cơ bản,17832,2018-2025,4
+TVS,Dịch vụ tài chính,52421,2018-2025,4
+VBB,Ngân hàng,25554,2018-2025,4
+VC2,Xây dựng và Vật liệu,14872,2018-2025,4
+VC3,Bất động sản,19016,2018-2025,4
+VC7,Xây dựng và Vật liệu,16623,2018-2025,4
+VCB,Ngân hàng,25162,2018-2025,4
+VCG,Xây dựng và Vật liệu,19045,2018-2025,4
+VCI,Dịch vụ tài chính,53570,2018-2025,4
+VCP,"Điện, nước & xăng dầu khí đốt",18720,2018-2025,4
+VCR,Bất động sản,19016,2018-2025,4
+VCS,Xây dựng và Vật liệu,18944,2018-2025,4
+VDP,Y tế,17524,2018-2025,4
+VDS,Dịch vụ tài chính,52676,2018-2025,4
+VE9,Xây dựng và Vật liệu,12800,2018-2025,4
+VEA,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+VEF,Bất động sản,18424,2018-2025,4
+VFG,Hóa chất,19016,2018-2025,4
+VFS,Dịch vụ tài chính,51279,2018-2025,4
+VGC,Xây dựng và Vật liệu,19016,2018-2025,4
+VGI,Viễn thông,18424,2018-2025,4
+VGR,Hàng & Dịch vụ Công nghiệp,17592,2018-2025,4
+VGS,Tài nguyên Cơ bản,17536,2018-2025,4
+VGT,Hàng cá nhân & Gia dụng,18720,2018-2025,4
+VHC,Thực phẩm và đồ uống,19016,2018-2025,4
+VHE,Y tế,14447,2018-2025,4
+VHG,Hàng & Dịch vụ Công nghiệp,17448,2018-2025,4
+VHM,Bất động sản,19312,2018-2025,4
+VIB,Ngân hàng,24980,2018-2025,4
+VIC,Bất động sản,19312,2018-2025,4
+VIG,Dịch vụ tài chính,51197,2018-2025,4
+VIP,Hàng & Dịch vụ Công nghiệp,19016,2018-2025,4
+VIX,Dịch vụ tài chính,53274,2018-2025,4
+VJC,Du lịch và Giải trí,18975,2018-2025,4
+VLB,Xây dựng và Vật liệu,18310,2018-2025,4
+VLC,Thực phẩm và đồ uống,18975,2018-2025,4
+VMS,Hàng & Dịch vụ Công nghiệp,18949,2018-2025,4
+VNB,Truyền thông,16648,2018-2025,4
+VND,Dịch vụ tài chính,53611,2018-2025,4
+VNE,Xây dựng và Vật liệu,19016,2018-2025,4
+VNM,Thực phẩm và đồ uống,19016,2018-2025,4
+VNS,Du lịch và Giải trí,19016,2018-2025,4
+VNZ,Truyền thông,7584,2018-2025,4
+VOC,Thực phẩm và đồ uống,18424,2018-2025,4
+VOS,Hàng & Dịch vụ Công nghiệp,18985,2018-2025,4
+VPB,Ngân hàng,24980,2018-2025,4
+VPG,Tài nguyên Cơ bản,18184,2018-2025,4
+VPH,Bất động sản,18504,2018-2025,4
+VPI,Bất động sản,19016,2018-2025,4
+VPL,Du lịch và Giải trí,3592,2018-2025,2
+VRC,Bất động sản,18720,2018-2025,4
+VRE,Bất động sản,18720,2018-2025,4
+VRG,Bất động sản,18779,2018-2025,4
+VSC,Hàng & Dịch vụ Công nghiệp,19427,2018-2025,4
+VSI,Xây dựng và Vật liệu,18483,2018-2025,4
+VTD,Du lịch và Giải trí,9928,2018-2025,4
+VTO,Hàng & Dịch vụ Công nghiệp,18128,2018-2025,4
+VTP,Hàng & Dịch vụ Công nghiệp,18932,2018-2025,4
+VTR,Du lịch và Giải trí,17652,2018-2025,4
+VTZ,Hóa chất,10704,2018-2025,4
+VUA,Dịch vụ tài chính,43223,2018-2025,4
+VVS,Ô tô và phụ tùng,8757,2020-2025,4
+WSS,Dịch vụ tài chính,50897,2018-2025,4
+YEG,Truyền thông,18679,2018-2025,4
+YTC,Y tế,3120,2018-2024,0

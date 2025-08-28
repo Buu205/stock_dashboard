@@ -12,16 +12,16 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
-# Add src to path
+# Add parent directory to path
 current_dir = Path(__file__).parent
-src_path = current_dir / 'src'
-sys.path.insert(0, str(src_path))
+parent_path = current_dir.parent.parent
+sys.path.insert(0, str(parent_path))
 
 # Import all modules
-from core.config import get_config
-from data.loaders.financial_loader import FinancialDataLoader
-from data.connectors.tcbs_connector import TCBSConnector
-from analysis.integrated_analyzer import IntegratedAnalyzer
+from src.core.config import get_config
+from src.data.loaders.financial_loader import FinancialDataLoader
+from src.data.connectors.tcbs_connector import TCBSConnector
+from src.analysis.technical.integrated_analyzer import IntegratedAnalyzer
 
 
 def print_header(title: str):

@@ -12,15 +12,15 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
-# Add src to path
+# Add parent directory to path
 current_dir = Path(__file__).parent
-src_path = (current_dir / "../../src").resolve()
-if str(src_path) not in sys.path:
-    sys.path.insert(0, str(src_path))
+parent_path = (current_dir / "../..").resolve()
+if str(parent_path) not in sys.path:
+    sys.path.insert(0, str(parent_path))
 
 # Import our modules
-from core.config import Config
-from data.loaders.financial_loader import FinancialDataLoader
+from src.core.config import Config
+from src.data.loaders.financial_loader import FinancialDataLoader
 
 
 def print_section(title: str):

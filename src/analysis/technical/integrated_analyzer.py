@@ -12,12 +12,10 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-# Import modules
-import sys
-sys.path.append(str(Path(__file__).parent.parent.parent))
-from core.config import get_config, get_metric_code
-from data.loaders.financial_loader import FinancialDataLoader
-from data.connectors.tcbs_connector import TCBSConnector
+# Import modules - using relative imports
+from ...core.config import get_config, get_metric_code
+from ...data.loaders.financial_loader import FinancialDataLoader
+from ...data.connectors.tcbs_connector import TCBSConnector
 
 
 class IntegratedAnalyzer:

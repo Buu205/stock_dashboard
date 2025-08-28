@@ -8,11 +8,11 @@ import numpy as np
 import sys
 from pathlib import Path
 
-# Add src to path
-src_path = Path(__file__).parent.parent.parent / "src"
-sys.path.insert(0, str(src_path))
+# Add parent directory to path
+parent_path = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(parent_path))
 
-from utils.calculations import (
+from src.utils.calculations import (
     calculate_returns,
     calculate_moving_average,
     calculate_rsi,

@@ -13,10 +13,12 @@ import os
 import sys
 import numpy as np
 
-# Add src to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+# Add parent directory to path for imports
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
 
-from analysis.fundamental.growth_analyzer import GrowthAnalyzer
+from src.analysis.fundamental.growth_analyzer import GrowthAnalyzer
 
 # Page config
 st.set_page_config(

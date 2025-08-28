@@ -6,3 +6,4 @@ pyarrow
 openpyxl
 pyyaml
 requests
+tqdm

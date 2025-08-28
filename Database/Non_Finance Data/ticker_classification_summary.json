@@ -1,0 +1,294 @@
+{
+  "classification_date": "2025-08-27 22:51:48",
+  "standard": {
+    "count": 396,
+    "data_rows": 6811922,
+    "size_mb": 32.09,
+    "metric_types": [
+      "CBS",
+      "CIS"
+    ],
+    "industries": {
+      "Xây dựng và Vật liệu": 76,
+      "Bất động sản": 75,
+      "Thực phẩm và đồ uống": 39,
+      "Hàng & Dịch vụ Công nghiệp": 38,
+      "Tài nguyên Cơ bản": 37,
+      "Hóa chất": 27,
+      "Điện, nước & xăng dầu khí đốt": 18,
+      "Hàng cá nhân & Gia dụng": 14,
+      "Y tế": 14,
+      "Du lịch và Giải trí": 10,
+      "Bán lẻ": 9,
+      "Dầu khí": 8,
+      "Công nghệ Thông tin": 8,
+      "Ô tô và phụ tùng": 7,
+      "Bảo hiểm": 6,
+      "Truyền thông": 6,
+      "Viễn thông": 4
+    }
+  },
+  "special": {
+    "count": 61,
+    "data_rows": 2347771,
+    "size_mb": 6.17,
+    "metric_types": [
+      "SBS"
+    ],
+    "industries": {
+      "Dịch vụ tài chính": 37,
+      "Ngân hàng": 24
+    },
+    "tickers": [
+      {
+        "Ticker": "AAS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "ABB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "ABW",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "ACB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "AGR",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "APG",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "APS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "BCG",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "BID",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "BMS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "BSI",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "BVB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "BVS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "CTG",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "CTS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "DSC",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "DSE",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "EIB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "EVF",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "EVS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "FTS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "HCM",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "HDB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "HVA",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "IVS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "KLB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "LPB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "MBB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "MBS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "MSB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "NAB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "NVB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "OCB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "OGC",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "ORS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "PGB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "PSI",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "SBS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "SHB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "SHS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "SSB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "SSI",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "STB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "TCB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "TCI",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "TPB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "TVB",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "TVC",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "TVS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "VBB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "VCB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "VCI",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "VDS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "VFS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "VIB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "VIG",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "VIX",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "VND",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "VPB",
+        "Industry_ICB_L2": "Ngân hàng"
+      },
+      {
+        "Ticker": "VUA",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      },
+      {
+        "Ticker": "WSS",
+        "Industry_ICB_L2": "Dịch vụ tài chính"
+      }
+    ]
+  },
+  "coverage": {
+    "total_rows": 9159693,
+    "covered_rows": 9159693,
+    "percentage": 100.0
+  }
+}

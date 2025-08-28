@@ -1,0 +1,128 @@
+# config.yaml - Configuration for Stock Dashboard
+app:
+  name: "Vietnam Stock Dashboard"
+  version: "1.0.0"
+  debug: true
+  author: "Buu"
+
+# File paths configuration
+paths:
+  data:
+    # Main database parquet file - SỬA ĐƯỜNG DẪN CHO PHÙ HỢP
+    parquet: "./Database/Full_database/Buu_clean_ver2.parquet"
+    # Metadata Excel file với mô tả các metric codes - SỬA ĐƯỜNG DẪN CHO PHÙ HỢP
+    metadata: "./Database/Full_database/CSDL.xlsx"
+    # Cache directory for temporary storage
+    cache_dir: "./Database/cache"
+    # Output directory for exports
+    output_dir: "./outputs"
+
+# Data loading configuration
+data:
+  # Cache time-to-live in seconds (1 hour)
+  cache_ttl: 3600
+  # Default number of years to look back
+  default_lookback_years: 5
+  # Default frequency (Y: Yearly, Q: Quarterly)
+  default_frequency: "Y"
+  # Batch size for processing
+  batch_size: 100
+
+# Metric code mapping to readable names
+analysis:
+  # Income Statement metrics
+  income_statement:
+    revenue: "CIS_10"              # Doanh thu thuần
+    cogs: "CIS_11"                 # Giá vốn hàng bán
+    gross_profit: "CIS_20"         # Lợi nhuận gộp
+    admin_expense: "CIS_25"        # Chi phí quản lý doanh nghiệp
+    selling_expense: "CIS_26"      # Chi phí bán hàng
+    financial_income: "CIS_21"     # Thu nhập tài chính
+    financial_expense: "CIS_22"    # Chi phí tài chính
+    other_income: "CIS_31"         # Thu nhập khác
+    other_expense: "CIS_32"        # Chi phí khác
+    profit_before_tax: "CIS_50"    # Lợi nhuận trước thuế
+    net_profit: "CIS_61"           # Lợi nhuận sau thuế công ty mẹ
+    
+  # Balance Sheet metrics
+  balance_sheet:
+    total_assets: "CBS_270"         # Tổng tài sản
+    current_assets: "CBS_100"       # Tài sản ngắn hạn
+    cash_equivalents: "CBS_110"     # Tiền và tương đương tiền
+    short_term_invest: "CBS_112"    # Đầu tư tài chính ngắn hạn
+    receivables: "CBS_130"          # Các khoản phải thu
+    inventory: "CBS_140"            # Hàng tồn kho
+    fixed_assets: "CBS_220"         # Tài sản cố định
+    total_liabilities: "CBS_300"    # Tổng nợ
+    current_liabilities: "CBS_320"  # Vay và nợ thuê tài chính ngắn hạn
+    long_term_debt: "CBS_338"       # Vay và nợ thuê tài chính dài hạn
+    equity: "CBS_400"               # Vốn chủ sở hữu
+    
+  # Cash Flow metrics
+  cash_flow:
+    operating_cf: "CFS_20"         # Dòng tiền từ hoạt động kinh doanh
+    investing_cf: "CFS_30"         # Dòng tiền từ hoạt động đầu tư
+    financing_cf: "CFS_40"         # Dòng tiền từ hoạt động tài chính
+    net_cash_flow: "CFS_50"        # Lưu chuyển tiền thuần
+    depreciation: "CCFI_2"         # Khấu hao
+
+# Calculation parameters
+calculations:
+  # Growth calculation
+  growth:
+    min_periods: 2  # Minimum periods for growth calculation
+    annualize: true  # Annualize quarterly growth rates
+    
+  # Ratio thresholds for analysis
+  thresholds:
+    good_roe: 0.15          # ROE > 15% is good
+    good_roa: 0.10          # ROA > 10% is good
+    high_debt_equity: 1.0   # D/E > 1 is high leverage
+    good_current_ratio: 1.5 # Current ratio > 1.5 is healthy
+    
+  # Peer comparison settings
+  comparison:
+    min_companies: 3
+    max_companies: 10
+    sectors_to_compare: ["same", "related"]
+
+# API Configuration
+api:
+  tcbs:
+    enabled: true
+    base_url: "https://apipubaws.tcbs.com.vn"
+    rate_limit: 120  # requests per minute
+    timeout: 10      # seconds
+    cache_ttl: 3600  # 1 hour cache
+    
+  vnstock:
+    enabled: false   # Set to true when needed
+    rate_limit: 100  # requests per minute
+    timeout: 30      # seconds
+    retry_count: 3
+    
+  ssi:
+    enabled: false
+    api_key: "${SSI_API_KEY}"  # Load from environment
+    api_secret: "${SSI_API_SECRET}"
+    base_url: "https://api.ssi.com.vn"
+
+# Visualization settings
+visualization:
+  theme: "plotly_white"
+  chart_height: 500
+  chart_width: 1200
+  color_scheme: "Set2"
+  
+  # Export settings
+  export:
+    dpi: 100
+    format: "png"  # png, svg, pdf
+    
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/app.log"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5

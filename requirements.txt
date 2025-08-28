@@ -1,0 +1,30 @@
+# Core dependencies
+pandas==2.1.4
+numpy==1.26.2
+pyarrow==14.0.2       # For parquet file support
+openpyxl==3.1.2       # For Excel file support
+pyyaml==6.0.1         # For YAML config
+
+# Data processing
+python-dateutil==2.8.2
+requests==2.31.0      # For API calls
+
+# Market data
+vnstock3               # VN stock data library
+vnstock_data          # Alternative VN stock data source
+
+# Visualization
+plotly==5.18.0        # Interactive charts
+streamlit==1.31.0     # Web dashboard
+
+# Development tools
+ipython==8.18.1
+jupyter==1.0.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Additional utilities
+python-dotenv==1.0.0  # Environment variables
+loguru==0.7.2         # Logging

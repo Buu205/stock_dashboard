@@ -12,7 +12,7 @@ from tqdm import tqdm
 import time
 
 # Import from same directory
-from .ohlcv_connector import HybridOHLCVConnector
+from .ohlcv_connector import OHLCVConnector
 from .ohlcv_cache import OHLCVCacheManager
 
 # Setup logging
@@ -33,7 +33,7 @@ class OHLCVUpdater:
             parquet_path: Path to the main database
         """
         self.parquet_path = parquet_path
-        self.connector = HybridOHLCVConnector(primary='tcbs')
+        self.connector = OHLCVConnector()
         self.cache = OHLCVCacheManager()
         
         # Load ticker list

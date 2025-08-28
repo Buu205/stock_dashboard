@@ -1,22 +1,8 @@
-# Core dependencies
-streamlit==1.31.0
-pandas==2.1.4
-numpy==1.26.2
-plotly==5.18.0
-
-# Data processing
-pyarrow==14.0.2
-openpyxl==3.1.2
-pyyaml==6.0.1
-python-dateutil==2.8.2
-requests==2.31.0
-
-# Additional utilities
-python-dotenv==1.0.0
-loguru==0.7.2
-
-# Optional - for development (not needed for deployment)
-# pytest==7.4.3
-# pytest-cov==4.1.0
-# ipython==8.18.1
-# jupyter==1.0.0
+streamlit
+pandas
+numpy
+plotly
+pyarrow
+openpyxl
+pyyaml
+requests

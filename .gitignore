@@ -44,11 +44,11 @@ venv.bak/
 .ipynb_checkpoints
 
 # Data files
-*.parquet
-*.csv
-*.xlsx
+# *.parquet  # Commented out to include database files
+# *.csv  # Commented out to include cache CSV files
+# *.xlsx  # Commented out to include CSDL.xlsx
 *.xls
-Database/cache/
+# Database/cache/  # Commented out to include cache files
 *.pkl
 
 # Logs

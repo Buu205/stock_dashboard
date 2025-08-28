@@ -28,9 +28,28 @@ class TCBSConnector:
     
     BASE_URL = "https://apipubaws.tcbs.com.vn"
     
-    def __init__(self, config_path: str = "config.yaml"):
+    def __init__(self, config_path: str = None):
         """Initialize TCBS connector with configuration"""
-        self.config = get_config(config_path)
+        if config_path is None:
+            # Try multiple possible paths
+            possible_paths = [
+                "config.yaml",
+                Path(__file__).parent.parent.parent.parent / "config.yaml",
+                Path.cwd() / "config.yaml"
+            ]
+            for path in possible_paths:
+                if Path(path).exists():
+                    config_path = str(path)
+                    break
+            else:
+                config_path = "config.yaml"  # Default fallback
+        
+        try:
+            self.config = get_config(config_path)
+        except Exception as e:
+            logger.warning(f"Could not load config from {config_path}: {e}")
+            # Create minimal config for basic operation
+            self.config = None
         self.session = requests.Session()
         self.session.headers.update({
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -450,7 +469,10 @@ class TCBSConnector:
     def save_cache(self, filepath: str = None):
         """Save cache to file"""
         if filepath is None:
-            filepath = self.config.get_cache_path("tcbs_cache.pkl")
+            if self.config and hasattr(self.config, 'get_cache_path'):
+                filepath = self.config.get_cache_path("tcbs_cache.pkl")
+            else:
+                filepath = "Database/cache/tcbs_cache.pkl"
         
         try:
             with open(filepath, 'wb') as f:
@@ -462,7 +484,10 @@ class TCBSConnector:
     def load_cache(self, filepath: str = None):
         """Load cache from file"""
         if filepath is None:
-            filepath = self.config.get_cache_path("tcbs_cache.pkl")
+            if self.config and hasattr(self.config, 'get_cache_path'):
+                filepath = self.config.get_cache_path("tcbs_cache.pkl")
+            else:
+                filepath = "Database/cache/tcbs_cache.pkl"
         
         try:
             if Path(filepath).exists():

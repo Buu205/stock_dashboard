@@ -584,12 +584,12 @@ with tab2:
         with col1:
             if 'CIS_10' in display_data.columns:
                 fig_revenue = create_metric_chart(display_data, 'CIS_10', 'Doanh thu thuần', 'blue', is_quarterly)
-                st.plotly_chart(fig_revenue, use_container_width=True)
+                st.plotly_chart(fig_revenue)
         
         with col2:
             if 'CIS_20' in display_data.columns:
                 fig_gross = create_metric_chart(display_data, 'CIS_20', 'Lợi nhuận gộp', 'green', is_quarterly)
-                st.plotly_chart(fig_gross, use_container_width=True)
+                st.plotly_chart(fig_gross)
         
         # Row 2: EBITDA and Net Profit
         col3, col4 = st.columns(2)
@@ -598,7 +598,7 @@ with tab2:
             # Always try to show EBITDA
             if 'EBITDA' in display_data.columns:
                 fig_ebitda = create_metric_chart(display_data, 'EBITDA', 'EBITDA', 'purple', is_quarterly)
-                st.plotly_chart(fig_ebitda, use_container_width=True)
+                st.plotly_chart(fig_ebitda)
             else:
                 # Try to calculate EBITDA if not available
                 ebitda_calculated = False
@@ -614,21 +614,21 @@ with tab2:
                 
                 if ebitda_calculated:
                     fig_ebitda = create_metric_chart(display_data, 'EBITDA', 'EBITDA', 'purple', is_quarterly)
-                    st.plotly_chart(fig_ebitda, use_container_width=True)
+                    st.plotly_chart(fig_ebitda)
                 else:
                     st.info("EBITDA: Không đủ dữ liệu để tính toán")
         
         with col4:
             if 'CIS_61' in display_data.columns:
                 fig_net = create_metric_chart(display_data, 'CIS_61', 'Lợi nhuận ròng', 'red', is_quarterly)
-                st.plotly_chart(fig_net, use_container_width=True)
+                st.plotly_chart(fig_net)
         
         # Row 3: SG&A (full width)
         if 'CIS_25' in display_data.columns and 'CIS_26' in display_data.columns:
             # Calculate SG&A
             display_data['SGA'] = abs(display_data['CIS_25']) + abs(display_data['CIS_26'])
             fig_sga = create_metric_chart(display_data, 'SGA', 'Chi phí bán hàng & quản lý (SG&A)', 'orange', is_quarterly)
-            st.plotly_chart(fig_sga, use_container_width=True)
+            st.plotly_chart(fig_sga)
     else:
         st.info("Không có dữ liệu theo quý")
 
@@ -716,7 +716,7 @@ with tab3:
             f"Tất cả Margins - {selected_ticker}",
             is_quarterly
         )
-        st.plotly_chart(fig_all_margins, use_container_width=True)
+        st.plotly_chart(fig_all_margins)
         
         # Row 2: Individual margin charts
         col1, col2 = st.columns(2)
@@ -729,7 +729,7 @@ with tab3:
                     f"Gross Profit Margin - {selected_ticker}",
                     is_quarterly
                 )
-                st.plotly_chart(fig_gross_margin, use_container_width=True)
+                st.plotly_chart(fig_gross_margin)
         
         with col2:
             if 'Operating_Margin' in margin_data.columns:
@@ -739,7 +739,7 @@ with tab3:
                     f"Operating Margin - {selected_ticker}",
                     is_quarterly
                 )
-                st.plotly_chart(fig_op_margin, use_container_width=True)
+                st.plotly_chart(fig_op_margin)
         
         # Row 3: EBITDA and Net Margin
         col3, col4 = st.columns(2)
@@ -752,7 +752,7 @@ with tab3:
                     f"EBITDA Margin - {selected_ticker}",
                     is_quarterly
                 )
-                st.plotly_chart(fig_ebitda_margin, use_container_width=True)
+                st.plotly_chart(fig_ebitda_margin)
         
         with col4:
             if 'Net_Margin' in margin_data.columns:
@@ -762,7 +762,7 @@ with tab3:
                     f"Net Profit Margin - {selected_ticker}",
                     is_quarterly
                 )
-                st.plotly_chart(fig_net_margin, use_container_width=True)
+                st.plotly_chart(fig_net_margin)
         
         # Latest margins summary
         period_label = "Quý gần nhất" if is_quarterly else "Năm gần nhất"
@@ -920,7 +920,7 @@ with tab4:
                         for col in ['Trung bình', 'Tối thiểu', 'Tối đa', 'Độ lệch chuẩn']:
                             stats_df[col] = stats_df[col].apply(lambda x: f'{x:,.0f}')
                         
-                        st.dataframe(stats_df, use_container_width=True, hide_index=True)
+                        st.dataframe(stats_df, hide_index=True)
             
             # Download button
             csv = display_data.to_csv(index=False)

@@ -93,7 +93,7 @@ def main():
         
         # Update data button
         st.divider()
-        if st.button("🔄 Update Data", use_container_width=True):
+        if st.button("🔄 Update Data"):
             with st.spinner("Updating OHLCV data..."):
                 # Update top tickers
                 top_tickers = all_tickers[:10] if all_tickers else updater.tickers[:10]
@@ -153,7 +153,7 @@ def main():
                 )
         
         with col2:
-            if st.button("📊 Generate Chart", use_container_width=True):
+            if st.button("📊 Generate Chart"):
                 st.session_state['generate_chart'] = True
         
         # Display chart
@@ -168,7 +168,7 @@ def main():
                 )
                 
                 if fig:
-                    st.plotly_chart(fig, use_container_width=True)
+                    st.plotly_chart(fig)
                     
                     # Display latest statistics
                     df = updater.get_ticker_data(selected_ticker)
@@ -231,7 +231,7 @@ def main():
             )
         
         with col2:
-            if st.button("📊 Compare", use_container_width=True):
+            if st.button("📊 Compare"):
                 st.session_state['compare_stocks'] = True
         
         if compare_tickers and st.session_state.get('compare_stocks', False):
@@ -239,7 +239,7 @@ def main():
                 fig = viz.create_multi_ticker_chart(compare_tickers, days)
                 
                 if fig:
-                    st.plotly_chart(fig, use_container_width=True)
+                    st.plotly_chart(fig)
                     
                     # Performance table
                     st.subheader("Performance Comparison")
@@ -267,7 +267,7 @@ def main():
                     
                     if perf_data:
                         perf_df = pd.DataFrame(perf_data)
-                        st.dataframe(perf_df, use_container_width=True, hide_index=True)
+                        st.dataframe(perf_df, hide_index=True)
                 else:
                     st.error("Failed to create comparison chart")
     
@@ -297,7 +297,7 @@ def main():
                 help="Only analyze stocks with daily trading value above this threshold"
             )
             
-            if st.button("🔍 Analyze Market", use_container_width=True):
+            if st.button("🔍 Analyze Market"):
                 st.session_state['analyze_market'] = True
                 st.session_state['min_trading_value'] = min_trading_value
         
@@ -507,7 +507,7 @@ def main():
                             yaxis=dict(range=[0, 100])
                         )
                         
-                        st.plotly_chart(fig_breadth, use_container_width=True)
+                        st.plotly_chart(fig_breadth)
                         
                         # Show statistics
                         col1, col2, col3, col4 = st.columns(4)
@@ -581,7 +581,7 @@ def main():
             gainers_sorted = sorted(gainers, key=lambda x: float(x['Change'].strip('%')), reverse=True)[:5]
             if gainers_sorted:
                 gainers_df = pd.DataFrame(gainers_sorted)
-                st.dataframe(gainers_df, use_container_width=True, hide_index=True)
+                st.dataframe(gainers_df, hide_index=True)
             else:
                 st.info("No gainers data available")
         
@@ -592,7 +592,7 @@ def main():
             losers_sorted = sorted(gainers, key=lambda x: float(x['Change'].strip('%')))[:5]
             if losers_sorted:
                 losers_df = pd.DataFrame(losers_sorted)
-                st.dataframe(losers_df, use_container_width=True, hide_index=True)
+                st.dataframe(losers_df, hide_index=True)
             else:
                 st.info("No losers data available")
         
@@ -621,7 +621,7 @@ def main():
         volume_sorted = sorted(volume_leaders, key=lambda x: float(x['Volume Ratio'].strip('x')), reverse=True)[:10]
         if volume_sorted:
             volume_df = pd.DataFrame(volume_sorted)
-            st.dataframe(volume_df, use_container_width=True, hide_index=True)
+            st.dataframe(volume_df, hide_index=True)
         else:
             st.info("No volume data available")
 

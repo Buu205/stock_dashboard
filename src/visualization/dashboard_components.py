@@ -93,7 +93,7 @@ class DashboardComponents:
                 height=500
             )
             
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig)
             
         except Exception as e:
             st.error(f"Error rendering price chart: {str(e)}")
@@ -150,7 +150,7 @@ class DashboardComponents:
                 height=400
             )
             
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig)
             
             # Display metrics
             col1, col2, col3, col4 = st.columns(4)
@@ -264,7 +264,7 @@ class DashboardComponents:
             
             if comparison_data:
                 df = pd.DataFrame(comparison_data)
-                st.dataframe(df, use_container_width=True)
+                st.dataframe(df)
             else:
                 st.info("No data available for comparison")
             

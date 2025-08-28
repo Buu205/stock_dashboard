@@ -190,7 +190,7 @@ if stock_symbol:
                 ema_periods=ema_periods
             )
             
-            st.plotly_chart(candlestick_fig, use_container_width=True)
+            st.plotly_chart(candlestick_fig)
             
             # Technical summary
             if trend_signals:
@@ -225,7 +225,7 @@ if stock_symbol:
                     summary_fig = chart_creator.create_technical_summary_chart(
                         data, trend_signals, f"Technical Summary - {stock_symbol}"
                     )
-                    st.plotly_chart(summary_fig, use_container_width=True)
+                    st.plotly_chart(summary_fig)
             
             with tab2:
                 if 'volume' in data.columns:
@@ -262,7 +262,7 @@ if stock_symbol:
                         height=400
                     )
                     
-                    st.plotly_chart(volume_fig, use_container_width=True)
+                    st.plotly_chart(volume_fig)
             
             with tab3:
                 # Display data table
@@ -276,7 +276,7 @@ if stock_symbol:
                     if col in display_data.columns:
                         display_data[col] = display_data[col].round(2)
                 
-                st.dataframe(display_data, use_container_width=True)
+                st.dataframe(display_data)
                 
                 # Download button
                 csv = data.to_csv(index=False)
@@ -362,7 +362,7 @@ with col2:
                     breadth_stats, "Market Breadth Analysis"
                 )
                 
-                st.plotly_chart(breadth_fig, use_container_width=True)
+                st.plotly_chart(breadth_fig)
                 
                 # Performance comparison
                 st.subheader("🏆 Top vs Worst Performers")
@@ -374,7 +374,7 @@ with col2:
                     performance_fig = chart_creator.create_performance_comparison_chart(
                         top_performers, worst_performers, "Performance Comparison"
                     )
-                    st.plotly_chart(performance_fig, use_container_width=True)
+                    st.plotly_chart(performance_fig)
                 
                 # Market health indicator
                 st.subheader("💚 Market Health Indicator")

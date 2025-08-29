@@ -1,0 +1,244 @@
+# Metric Mapping Configuration
+# File này chứa mapping giữa metric codes và tên/metrics trong hệ thống
+
+# Cấu trúc chính
+metric_definitions:
+  # Income Statement Metrics
+  income_statement:
+    revenue:
+      code: "CIS_10"
+      description: "Doanh thu thuần"
+      category: "income_statement"
+      subcategory: "revenue"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Income_Statement"
+      is_active: true
+      is_required: true
+      validation_rules:
+        min_value: 0
+        data_type: "numeric"
+      
+    cogs:
+      code: "CIS_11"
+      description: "Giá vốn hàng bán"
+      category: "income_statement"
+      subcategory: "expense"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Income_Statement"
+      is_active: true
+      is_required: false
+      
+    gross_profit:
+      code: "CIS_20"
+      description: "Lợi nhuận gộp"
+      category: "income_statement"
+      subcategory: "profit"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Income_Statement"
+      is_active: true
+      is_required: true
+      
+    net_profit:
+      code: "CIS_61"
+      description: "Lợi nhuận sau thuế công ty mẹ"
+      category: "income_statement"
+      subcategory: "profit"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Income_Statement"
+      is_active: true
+      is_required: true
+
+  # Balance Sheet Metrics
+  balance_sheet:
+    total_assets:
+      code: "CBS_270"
+      description: "Tổng tài sản"
+      category: "balance_sheet"
+      subcategory: "asset"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Balance_Sheet"
+      is_active: true
+      is_required: true
+      
+    current_assets:
+      code: "CBS_100"
+      description: "Tài sản ngắn hạn"
+      category: "balance_sheet"
+      subcategory: "asset"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Balance_Sheet"
+      is_active: true
+      is_required: false
+      
+    equity:
+      code: "CBS_400"
+      description: "Vốn chủ sở hữu"
+      category: "balance_sheet"
+      subcategory: "equity"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Balance_Sheet"
+      is_active: true
+      is_required: true
+
+  # Cash Flow Metrics
+  cash_flow:
+    operating_cf:
+      code: "CFS_20"
+      description: "Dòng tiền từ hoạt động kinh doanh"
+      category: "cash_flow"
+      subcategory: "operating"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Cash_Flow"
+      is_active: true
+      is_required: true
+      
+    investing_cf:
+      code: "CFS_30"
+      description: "Dòng tiền từ hoạt động đầu tư"
+      category: "cash_flow"
+      subcategory: "investing"
+      unit: "VND"
+      source: "BSC"
+      tab_source: "Cash_Flow"
+      is_active: true
+      is_required: false
+
+  # Bank-specific Metrics
+  bank_metrics:
+    capital_adequacy_ratio:
+      code: "BANK_CAR"
+      description: "Tỷ lệ an toàn vốn"
+      category: "bank_ratio"
+      subcategory: "capital"
+      unit: "%"
+      source: "BSC"
+      tab_source: "Bank_Ratios"
+      is_active: true
+      is_required: false
+      validation_rules:
+        min_value: 0
+        max_value: 100
+        data_type: "percentage"
+        
+    loan_to_deposit_ratio:
+      code: "BANK_LDR"
+      description: "Tỷ lệ cho vay trên tiền gửi"
+      category: "bank_ratio"
+      subcategory: "liquidity"
+      unit: "%"
+      source: "BSC"
+      tab_source: "Bank_Ratios"
+      is_active: true
+      is_required: false
+      
+    net_interest_margin:
+      code: "BANK_NIM"
+      description: "Biên lãi thuần"
+      category: "bank_ratio"
+      subcategory: "profitability"
+      unit: "%"
+      source: "BSC"
+      tab_source: "Bank_Ratios"
+      is_active: true
+      is_required: false
+
+  # Financial Ratios
+  financial_ratios:
+    roe:
+      code: "RATIO_ROE"
+      description: "Tỷ suất sinh lời trên vốn chủ sở hữu"
+      category: "ratio"
+      subcategory: "profitability"
+      unit: "%"
+      source: "BSC"
+      tab_source: "Financial_Ratios"
+      is_active: true
+      is_required: true
+      
+    roa:
+      code: "RATIO_ROA"
+      description: "Tỷ suất sinh lời trên tài sản"
+      category: "ratio"
+      subcategory: "profitability"
+      unit: "%"
+      source: "BSC"
+      tab_source: "Financial_Ratios"
+      is_active: true
+      is_required: true
+      
+    debt_to_equity:
+      code: "RATIO_DE"
+      description: "Tỷ lệ nợ trên vốn chủ sở hữu"
+      category: "ratio"
+      subcategory: "leverage"
+      unit: "ratio"
+      source: "BSC"
+      tab_source: "Financial_Ratios"
+      is_active: true
+      is_required: false
+
+# Mapping giữa tên tiếng Anh và metric codes
+name_to_code_mapping:
+  revenue: "CIS_10"
+  gross_profit: "CIS_20"
+  net_profit: "CIS_61"
+  total_assets: "CBS_270"
+  equity: "CBS_400"
+  operating_cash_flow: "CFS_20"
+  roe: "RATIO_ROE"
+  roa: "RATIO_ROA"
+  debt_to_equity: "RATIO_DE"
+
+# Mapping giữa tên tiếng Việt và metric codes
+vietnamese_mapping:
+  "Doanh thu thuần": "CIS_10"
+  "Lợi nhuận gộp": "CIS_20"
+  "Lợi nhuận sau thuế": "CIS_61"
+  "Tổng tài sản": "CBS_270"
+  "Vốn chủ sở hữu": "CBS_400"
+  "Dòng tiền từ hoạt động kinh doanh": "CFS_20"
+
+# Cấu hình hiển thị theo ngành
+sector_display_config:
+  bank:
+    priority_metrics:
+      - "BANK_CAR"
+      - "BANK_LDR"
+      - "BANK_NIM"
+      - "CIS_10"
+      - "CIS_61"
+    required_metrics:
+      - "BANK_CAR"
+      - "CIS_10"
+      
+  manufacturing:
+    priority_metrics:
+      - "CIS_10"
+      - "CIS_20"
+      - "CIS_61"
+      - "RATIO_ROE"
+      - "RATIO_ROA"
+    required_metrics:
+      - "CIS_10"
+      - "CIS_61"
+
+# Metadata
+metadata:
+  version: "1.0.0"
+  last_updated: "2024-08-29"
+  source: "BSC"
+  total_metrics: 25
+  categories:
+    - income_statement
+    - balance_sheet
+    - cash_flow
+    - bank_ratio
+    - ratio
